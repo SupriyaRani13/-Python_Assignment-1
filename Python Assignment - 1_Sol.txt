@@ -1,0 +1,311 @@
+ Python Assignment - 1
+
+1. In the below elements which of them are values or an expression? eg:- values can be
+   integer or string and expressions will be mathematical operators.
+
+Ans: * - Number
+    'Hello' - String
+     -87.8 - int
+     - - 
+     / - Multiply
+     + - Addition
+     6 - Number
+
+2. What is the difference between string and variable?
+
+Ans: A string is a sequence of one or more characters (letters, numbers, symbols) that can be either a constant or a variable.
+     Strings in python are surrounded by either single quotation marks, or double quotation marks.
+     Strings are data, so we can use them to fill up a variable.
+     Eg - "hello"
+     Eg - print("Hello")
+
+     Variables are symbols that you can use to store data in a program. You can think of them as an empty box that you fill with some data or value. 
+     Variables are containers for storing data values.
+     Eg - x = 5
+          y = "John"
+          print(x)
+          print(y)
+
+ 3.Describe three different data types.
+  
+ Ans: The three different data types:-
+  
+     1.Numeric
+     2.Sequence Type
+     3.Boolean
+
+     1.Numeric:-
+       
+       The numeric data type in Python represents the data that has a numeric value. A numeric value can be an integer,
+       a floating number, or even a complex number.
+       Eg-a = 5
+          print("Type of a: ", type(a))
+ 
+         b = 5.0
+         print("\nType of b: ", type(b))
+ 
+         c = 2 + 4j
+         print("\nType of c: ", type(c))
+
+       Output:-Type of a:  <class 'int'>
+
+               Type of b:  <class 'float'>
+
+               Type of c:  <class 'complex'>
+
+     2.Sequence Type:-
+
+       The sequence Data Type in Python is the ordered collection of similar or different data types. 
+       Sequences allow storing of multiple values in an organized and efficient fashion.
+       
+     Eg-myList1 = [10, 20, 30, 40, 50]
+     myList2 = [56, 42, 79, 42, 85, 96, 23]
+
+     if 30 in myList1:
+      print('30 is present')
+    
+    if 120 not in myList1:
+     print('120 is not present')
+    
+   print(myList1 + myList2) #Concatinate lists
+   print(myList1 * 3) #Add myList1 three times with itself
+   print(max(myList2))
+   print(myList2.count(42)) #42 has two times in the list
+
+   print(myList2[2:7])
+   print(myList2[2:7:2])
+
+   myList1.append(60)
+   print(myList1)
+
+   myList2.insert(5, 17)
+   print(myList2)
+
+   myList2.pop(3)
+   print(myList2)
+   myList1.reverse()
+   print(myList1)
+
+   myList1.clear()
+   print(myList1)
+
+   Output:-30 is present
+   120 is not present
+   [10, 20, 30, 40, 50, 56, 42, 79, 42, 85, 96, 23]
+   [10, 20, 30, 40, 50, 10, 20, 30, 40, 50, 10, 20, 30, 40, 50]
+   96
+   2
+   [79, 42, 85, 96, 23]
+   [79, 85, 23]
+   [10, 20, 30, 40, 50, 60]
+   [56, 42, 79, 42, 85, 17, 96, 23]
+   [56, 42, 79, 85, 17, 96, 23]
+   [60, 50, 40, 30, 20, 10]
+
+     3.Boolean:-
+     Data type with one of the two built-in values, True or False. Boolean objects that are equal to True are truthy (true),
+     and those equal to False are falsy (false).
+
+     Eg- print(type(True))
+        print(type(False))
+ 
+        print(type(true))
+
+   Output:- <class 'bool'>
+            <class 'bool'>
+
+  4. What is an expression made up of? What do all expressions do?
+
+  Ans: A combination of operands and operators is called an expression. An expression is a combination of symbols, variables, constants, 
+       and operators that represents a computation or a value. 
+       The different types of expression:-
+
+     1.Arithmetic Expressions
+     2.Integral Expressions.
+     3.Relational Expressions.
+     4.Logical Expressions.
+     5.Bitwise Expressions
+
+
+    1.Arithmetic Expressions:-An expression in Python that contains a combination of operators, operands, and sometimes parenthesis 
+     is known as an arithmetic expression.
+     Eg-x = 10
+        y = 5
+ 
+     addition = x + y
+     subtraction = x - y
+     product = x * y
+     division = x / y
+     power = x**y
+
+     print("The sum of x and y is: ", addition)
+     print("The difference between x and y is: ", subtraction)
+     print("The product of x and y is: ", product)
+     print("The division of x and y is: ", division)
+     print("x to the power y is: ", power)
+
+   Output:- The sum of x and y is:  15
+   The difference between x and y is:  5
+   The product of x and y is:  50
+   The division of x and y is:  2.0
+   x to the power y is:  100000
+
+  2.Integral Expressions:- An integral expression in Python is used for computations and type conversion (integer to float, a string to integer, etc.). 
+                           An integral expression always produces an integer value as a resultant.
+
+      Eg- x = 10      
+          y = 5.0  
+
+      result = x + int(y)
+
+      print("The sum of x and y is: ", result)
+    
+     Output:- The sum of x and y is: 15
+  
+ 3.Relational Expressions:- A relational expression in Python can be considered as a combination of two or more arithmetic expressions joined
+                            using relational operators. The overall expression results in either True or False.
+
+      
+   Eg- a = 25
+       b = 14
+       c = 48
+       d = 45
+
+      # The expression checks if the sum of (a and b) is the same as the difference of (c and d).
+      result = (a + b) == (c - d)
+      print("Type:", type(result))
+      print("The result of the expression is: ", result)
+
+  Output:- Type: <class 'bool'>
+           The result of the expression is:  False
+
+  
+     
+   4.Logical Expressions:- A logical expression performs the logical computation, and the overall expression results in either True or False.
+    
+   Eg- from operator import and_
+      x = (10 == 9)
+      y = (7 > 5)
+
+    and_result = x and y
+    or_result = x or y
+    not_x = not x
+   
+   print("The result of x and y is: ", and_result)
+   print("The result of x or y is: ", or_result)
+   print("The not of x is: ", not_x)
+
+ Output:- The result of x and y is: False
+          The result of x or y is: True
+          The not of x is: True
+
+ 5. This assignment statements, like spam = 10. What is the difference betweet an
+    expression and a statement?
+ 
+ Ans:  "spam = 10". This is a variable assignment statement. It assigns the value 10 to the variable "spam". The right-hand side of the assignment, 
+       which is  the expression "10", is evaluated to produce the value 10, and then that value is assigned to the variable "spam". The statement
+       itself doesn't have a value.
+
+      Expression: An expression is a combination of values, variables, operators, and function calls that can be evaluated to produce a result.
+      It can be as   simple as a single variable or constant, or it can be a complex combination of multiple elements. Expressions are used to 
+      perform calculations and generate values. For example, in the expression "2 + 3", the addition operator combines the values 2 and 3 to produce 
+      the result 5. Expressions always have a value.
+
+      Statement: A statement, on the other hand, is a unit of code that performs an action or controls the flow of execution. It is a complete
+      instruction that tells the computer what to do. Statements can include expressions, but they can also include keywords, control structures
+      (like if-else or loops), function calls, and assignments. Examples of statements are variable assignments, function declarations,
+       conditional statements, loops, and so on. Statements do not have a value themselves; they are executed to perform an action or control 
+       the program's behavior.
+
+ 6.After running the following code, what does the variable bacon contain?
+   bacon = 22
+   bacon + 1
+
+ Ans: The variable bacon is assigned the value 22 with the statement bacon = 22.
+      The expression bacon + 1 is evaluated, which results in the value 23.
+      However, since the result of the expression bacon + 1 is not assigned to any variable or used in any way, it is not stored or
+      persisted. It is essentially a "throwaway" computation that doesn't affect the value of bacon.
+
+7.What should the values of the following two terms be?
+  'spam' + 'spamspam'
+  'spam'*3
+
+Ans:'spam' + 'spamspam': This expression performs string concatenation. The + operator, when used with strings, concatenates them together.
+     The result would be the string 'spamspamspam'. The original string 'spam' is concatenated with the string 'spamspam', resulting in 'spamspamspam'.
+    
+     'spam' * 3: This expression performs string repetition. The * operator, when used with a string and an integer, repeats the string multiple times. 
+      In this case, the string 'spam' is repeated three times, resulting in the string 'spamspamspam'.
+  
+8. Why is eggs a valid variable name while 100 is invalid?
+
+Ans: The eggs a vaild variable name while 100 is invalid beacause Variable names cannot begin with a number.
+
+9. What three functions can be used to get the integer, floating-point number, or string
+   version of a value?
+
+Ans: Three functions can be used to get the integer, floating-point number, or string:-
+
+     1. Int:- This function can be used to convert a value to an integer. It takes a numeric or string argument and returns an integer
+        representation of the value. If the argument is a string, it should contain a valid integer representation, otherwise, 
+        a ValueError will be raised.
+
+     Eg:- int(10.5)  # returns 10
+          int("20")  # returns 20
+
+     2.Float:- This function is used to convert a value to a floating-point number. It takes a numeric or string argument and returns 
+               a floating-point representation of the value. If the argument is a string.
+
+     Eg- float(10)    # returns 10.0
+         float("3.14")  # returns 3.14
+
+    3. String:- This function is used to convert a value to its string representation. It takes any Python object as an argument and 
+                returns a string representation of the value.
+
+     Eg- str(10)    # returns "10"
+         str(3.14)  # returns "3.14"
+         str(True)  # returns "True"
+
+10. Why does this expression cause an error? How can you fix it?
+    'I have eaten'+99 +'burritos'.
+
+Ans: The expression 'I have eaten' + 99 + 'burritos' causes an error because you are attempting to concatenate a string ('I have eaten')
+     with an integer (99) without converting the integer to a string first. In Python, you cannot directly concatenate different data types
+     without explicit conversion.
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
